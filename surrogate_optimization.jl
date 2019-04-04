@@ -176,7 +176,7 @@ end
 
 #__________#
 
-function A(n,lb) # n number of sampling #lb=0 then optimise on x lb=1 optimse on y
+function A(n,lb) # n number of sampling #lb=0 then optimise on x lb=1 optimse on y for minimum
   for i in range(1,stop=n)
     w=.2
     if i==n/3
@@ -192,7 +192,7 @@ function A(n,lb) # n number of sampling #lb=0 then optimise on x lb=1 optimse on
     append!(y,d1)
     append!(vv,k)
     u,e=incp(lb)
-    println(u) #print the optimal value lb=0 for x,lb=1 for y for each iteration
+    println(u) #print the optimal minimum value lb=0 for x,lb=1 for y for each iteration
   end
 end
 # for example
