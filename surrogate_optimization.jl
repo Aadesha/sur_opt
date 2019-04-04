@@ -185,13 +185,14 @@ function A(n,lb) # n number of sampling #lb=0 then optimise on x lb=1 optimse on
     if i==(2*n)/3
       w=.95
     end
-    k=Obj(w,lb) #update the x,y,vv(time)
+    k=Obj(w,lb)
     d,d1=sol(k)
+     #update the x,y,vv(time)
     append!(x,d)
     append!(y,d1)
     append!(vv,k)
     u,e=incp(lb)
-    println(u) #print the optimal value lb=0 for x,lb=1 for y
+    println(u) #print the optimal value lb=0 for x,lb=1 for y for each iteration
   end
 end
 # for example
