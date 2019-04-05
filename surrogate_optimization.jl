@@ -154,6 +154,7 @@ function randomso(a)
   CP =[ (a + .01rand()) for i in range(1,stop=25)]#alpha=.1
   GP =[ (a - .01rand()) for i in range(1,stop=25)]
   append!(CP,GP)
+  sort!(CP)
   return CP
 end
 
