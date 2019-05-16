@@ -5,7 +5,7 @@ using BasisFunctionExpansions
 using Optim
 using DiffEqParamEstim
 
-#ODE Equation
+#ODE Equation 1
 
 function f(du,u,p,t)
   du[1] = dx = p[1]*u[1] - u[1]*u[2]
