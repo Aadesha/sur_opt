@@ -1,4 +1,8 @@
 
+#=
+source
+http://www.ressources-actuarielles.net/EXT/ISFA/1226.nsf/9c8e3fd4d8874d60c1257052003eced6/e7dc33e4da12c5a9c12576d8002e442b/$FILE/Jones01.pdf
+=#
 using DifferentialEquations
 using Plots
 using BasisFunctionExpansions
